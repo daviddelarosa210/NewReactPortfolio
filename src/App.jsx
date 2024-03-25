@@ -17,9 +17,7 @@ function App() {
         <Header />
 
         <Switch>
-          <Route path="/home">
-            <Home />
-          </Route>
+
           <Route path="/about">
             <About />
           </Route>
@@ -31,6 +29,9 @@ function App() {
           </Route>
           <Route path="/contact">
             <Contact />
+          </Route>
+          <Route path="/">
+            <Home />
           </Route>
         </Switch>
 

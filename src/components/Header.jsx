@@ -1,17 +1,16 @@
 // components/Header.jsx
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const Header = () => {
   return (
     <header>
-      <h1><a href="#home">David De La Rosa</a></h1>
+      <h1>  <Link to="/">David De La Rosa</Link></h1>
       <nav>
-        <ul>
-          <li><a href="#about">About</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#contact">Contact</a></li>
-          <li><a href="#qualifications">Qualifications</a></li>
-        </ul>
+      <Link to="/about">About</Link>
+        <Link to="/projects">Projects</Link>
+        <Link to="/qualifications">Qualifications</Link>
+        <Link to="/contact">Contact</Link>
       </nav>
     </header>
   );
