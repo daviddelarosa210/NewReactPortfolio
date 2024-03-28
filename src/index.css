@@ -1,29 +1,23 @@
-/* Header.css */
-#header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 20px; /* Adjust padding as needed */
-    background-color: black; /* Example background color */
-    color: #fff; /* Example text color */
-  }
-  
-  .name-header {
-    margin: 0; /* Remove default margin */
-  }
-  
-  nav {
-    display: flex;
-  }
-  
-  nav a {
-    margin-left: 20px; /* Adjust spacing between links */
-    color: #fff; /* Example link color */
+a{
     text-decoration: none; /* Remove underline from links */
-  }
-  
-  /* Optionally, you can add hover effects to the links */
-  nav a:hover {
-    text-decoration: underline; /* Add underline on hover */
-  }
-  
+}
+
+/* Header */
+\#header{
+
+}
+
+.list-inline{
+    text-align: right;
+    margin-right: 50px;
+    
+}
+
+.list-inline-item:not(:last-child) {
+    margin-right: 50px;
+}
+
+.name-header{
+    margin-left: 50px;
+}
+
