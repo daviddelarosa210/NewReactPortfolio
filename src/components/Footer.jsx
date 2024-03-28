@@ -1,20 +1,27 @@
-// components/Footer.jsx
 import React from 'react';
+import { Link } from 'react-router-dom'; // Import Link from react-router-dom
 
 const Footer = () => {
   return (
     <footer>
       <div className="container">
-        <p>&copy; 2024 Your Name. All rights reserved.</p>
-        <div className="social-links">
-          <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">Twitter</a>
-          <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">Facebook</a>
-          <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-          {/* Add links to your social media profiles */}
+      <section>
+        <div>
+          <h1>Let's get down to business.</h1>
+          <ul>
+            <li><Link to="/about">About</Link></li>
+            <li><Link to="/projects">Projects</Link></li>
+            <li><Link to="/qualifications">Qualifications</Link></li>
+            <li><Link to="/contact">Contact</Link></li>
+          </ul>
         </div>
+      </section>
       </div>
     </footer>
   );
 };
 
 export default Footer;
+
+
+
