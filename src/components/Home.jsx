@@ -3,12 +3,16 @@ import { Link } from 'react-router-dom'; // Import Link from react-router-dom
 
 const Home = () => {
   return (
-    <div>
-      <section id="home-header">
-        <div className="home-header-text">
-          <h1>A Full Stack Developer skilled in front-end and back-end development.</h1>
+    <div id="home">
+  <section id="home-header" class="container">
+    <div class="row">
+      <div class="col-md-8 col-sm-10 col-xs-12">
+        <div class="">
+          <h1 className='home-header-text'>A Full Stack Developer skilled in front-end and back-end development.</h1>
         </div>
-      </section>
+      </div>
+    </div>
+  </section>
    
       <section id="home-picture">
         <div>      

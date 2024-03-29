@@ -1,5 +1,6 @@
 a{
     text-decoration: none; /* Remove underline from links */
+    color: white;
 }
 
 /* Header */
@@ -13,11 +14,39 @@ a{
     
 }
 
-.list-inline-item:not(:last-child) {
+.nav-item{
     margin-right: 50px;
+    color: white;
+    
 }
 
 .name-header{
     margin-left: 50px;
+    font-size: 35px;
+    font-weight: 300;
+    
 }
 
+.header-text{
+    height: 85px;
+}
+
+/* Home */
+
+#home{
+    background-color: black;
+
+}
+
+.home-header-text{
+    color: white;
+    font-size: 70px;
+    font-weight:300;
+    margin-left: 50px;
+}
+
+#home-header{
+    margin: 0;
+    padding-top: 100px;
+    padding-bottom: 200px;
+}
