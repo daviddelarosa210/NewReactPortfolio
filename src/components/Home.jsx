@@ -1,5 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom'; // Import Link from react-router-dom
+import 'bootstrap/dist/css/bootstrap.min.css';
+
 
 const Home = () => {
   return (
@@ -14,22 +16,31 @@ const Home = () => {
     </div>
   </section>
    
-      <section id="home-picture">
-        <div>      
-          <img src="" alt="" />
-        </div>
-      </section>
+  <section id="home-picture" className="d-flex justify-content-center align-items-center">
+  <div>      
+    <img src="/pfp.png" alt="Photo of David De La Rosa" />
+  </div>
+</section>
 
-      <section id="home-quote">
-        <div className='home-quote-text'>
-          <h3>So, you're pouring your heart into a project,</h3>
-          <h3>but how do you ensure users fall in love with it too?</h3>
-          <h3>That's where I come in as a full-stack developer.</h3>
+    <section id="home-quote" className="container-fluid">
+      <div className="row">
+        <div className="col-md-6 col-sm-12">
+          <div className='home-quote-text'>
+            <h3>So, you're pouring your heart into a project,</h3>
+            <h3>but how do you ensure users fall in love with it too?</h3>
+            <h3 className='twici'>That's where I come in as a full-stack developer!</h3>
+          </div>
         </div>
-        <div className='home-about-link'>
-            <Link to="/about">About</Link>
+      </div>
+    </section>
+
+    <div className="col-md-6 col-sm-12 d-flex">
+          <div className='home-about-link'>
+          <button type="button" class="btn btn-lg custom-button">
+            <Link to="/about" className="about-me-text">About Me</Link>
+          </button>
+          </div>
         </div>
-      </section>
 
       <section id='home-projects'>
         <div className='home-projects-quote'>
