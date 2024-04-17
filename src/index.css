@@ -1,78 +1,139 @@
-a{
-    text-decoration: none; /* Remove underline from links */
+a {
+    text-decoration: none;
     color: white;
-    
-}
-
-/* Header */
-\#header{
-
-}
-
-.list-inline{
+  }
+  
+  /* Header */
+  #header {
+  
+  }
+  
+  .list-inline {
     text-align: right;
     margin-right: 50px;
-    
-}
-
-.nav-item{
+  }
+  
+  .nav-item {
     margin-right: 50px;
     color: white;
-
-}
-
-.name-header{
+  }
+  
+  .name-header {
     margin-left: 50px;
     font-size: 35px;
     font-weight: 300;
-    
-}
-
-.header-text{
+  }
+  
+  .header-text {
     height: 85px;
-}
-
-/* Home */
-
-#home{
+  }
+  
+  /* Home */
+  #home {
     background-color: black;
-
-}
-
-.home-header-text{
+  }
+  
+  .home-header-text {
     color: white;
     font-size: 70px;
-    font-weight:300;
+    font-weight: 300;
     margin-left: 50px;
-}
-
-#home-header{
+  }
+  
+  #home-header {
     margin: 0;
     padding-top: 100px;
     padding-bottom: 200px;
-}
-.home-quote-text{
+  }
+  
+  .home-quote-text {
     color: white;
     margin-left: 50px;
     margin-top: 50px;
-}
-.twici{
-    margin-top: 50px;
-}
-
-.home-about-link{
-    margin-left: 60px;
-    margin-top: 50px;
-
-}
-.about-me-text{
-    color: black;
-}
-
-.custom-button{
-    background-color: #5CB080;
-}
-
-.custom-button:hover {
-    pointer-events: none;
   }
+  
+  .twici {
+    margin-top: 50px;
+  }
+  
+  .home-about-link {
+    margin-top: 50px;
+    margin-bottom: 150px;
+  }
+  
+  .about-me-text {
+    color: black;
+  }
+  
+  .custom-button {
+    background-color: #5CB080;
+  }
+  
+  .custom-button:hover {
+    background-color: #5CB080;
+    color: black;
+  }
+  
+  #home-projects {
+    background-color: white;
+  }
+  
+  .home-projects-quote {
+    margin-top: 50px;
+    color: black;
+    width: 800px;
+  }
+  
+  .fsd {
+    font-size: 40px;
+    text-align: center;
+  }
+  
+  .projects-link {
+    background-color: white;
+    width: 100%;
+  }
+  
+  .project-about-link {
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+  
+  .featured-projects-section {
+    margin-top: 50px;
+    color: white;
+  }
+  
+  #featured-project {
+    font-size: 40px;
+  }
+    /* Footer */
+
+    .list-unstyled {
+        list-style: none; /* Remove list points */
+        background-color: black;
+      }
+      
+      #footer {
+        background-color: black;
+        color: white;
+        padding-top: 50px;
+        padding-bottom: 50px;
+      }
+
+      .link-list{
+        padding-top: 50px;
+      }
+      .list-unstyled li {
+        margin-left: 50px;
+        margin-bottom: 18px; /* Adjust the value to set the desired space */
+        font-size: 40px;
+        font-weight: 100;
+      }
+      #footer-title{
+        font-size: 50px;
+        margin-bottom: 50px;
+      }
+      .list-unstyled li a {
+        text-decoration: underline;
+      }
