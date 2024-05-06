@@ -137,3 +137,43 @@ a {
       .list-unstyled li a {
         text-decoration: underline;
       }
+      /* About */
+      .about-me-heading{
+        font-size: 40px;
+        font-weight: 300;
+        width: 1200px;
+        color: white;
+        background-color: black;
+      }
+      #about-me-bio{
+        background-color: black;
+        padding-top: 50px;
+        padding-bottom: 50px;
+      }
+      #about-me-p{
+        font-size: 20px;
+
+      }
+      #about-me-h2{
+        font-size: 60px;
+        font-weight: 500;
+        padding-bottom: 25px;
+      }
+      #bio{
+        padding-left: 50px;
+        padding-right: 50px;
+        padding-top: 75px;
+        padding-bottom: 75px;
+      }
+      #wedding-img{
+        height: 500px;
+        margin-left: 100px;
+      }
+      .page{
+        background-color: #D4EDF4;
+        padding-bottom: 100px;
+        
+      }
+      #bio-section{
+        margin-top: 100px;
+      }
