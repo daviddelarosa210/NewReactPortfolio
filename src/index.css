@@ -148,7 +148,7 @@ a {
       #about-me-bio{
         background-color: black;
         padding-top: 50px;
-        padding-bottom: 50px;
+        padding-bottom: 100px;
       }
       #about-me-p{
         font-size: 20px;
@@ -176,4 +176,25 @@ a {
       }
       #bio-section{
         margin-top: 100px;
+      }
+
+      /* Projects */
+      #fphc{
+        background-color: black;
+        padding-top: 50px;
+        padding-bottom: 50px;
+      }
+      #featured-project{
+        font-size: 70px;
+        font-weight: 500;
+        color: white;
+      }
+      #project-cards{
+        background-color: #D4EDF4;
+        padding-top: 50px;
+        padding-bottom: 50px;
+      }
+
+      #ET-card{
+        padding: 50px;
       }
