@@ -13,7 +13,7 @@ const Footer = () => {
       </div>
 
       </section>
-      <div className="row justify-content-start"> {/* Align list to the left */}
+      <div className="row no-gutters"> {/* Align list to the left */}
         <div className="col-md-6"> {/* Adjust column size as needed */}
           <ul className="list-unstyled text-white bg-black"> {/* Make list text white */}
             <li><Link to="/about" className="text-white">About</Link></li>

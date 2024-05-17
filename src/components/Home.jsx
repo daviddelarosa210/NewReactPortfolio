@@ -16,13 +16,11 @@ const Home = () => {
       </section>
       
       <section id="home-picture" className="d-flex justify-content-center align-items-center">
-  <div className="container">
     <div className="row">
       <div className="col-md-12 d-flex justify-content-center">
-        <img src="/pfp.png" alt="Photo of David De La Rosa" />
+        <img src="/pfp.png" alt="Photo of David De La Rosa" className="img-fluid"/>
       </div>
     </div>
-  </div>
 </section>
 
 
@@ -38,7 +36,7 @@ const Home = () => {
         </div>
       </section>
 
-      <div className="row justify-content-start">
+      <div className="row justify-content-start no-gutters">
   <div className="col-md-6 col-sm-12 d-flex justify-content-start" style={{ marginLeft: '60px' }}> {/* Make it occupy the entire width and push its content to the left */}
     <div className='home-about-link'> {/* Apply margin to the right */}
       <Link to="/about" className="btn btn-lg custom-button about-me-text">About Me</Link>
@@ -49,15 +47,17 @@ const Home = () => {
 
 
 
-      <section id='home-projects' className="container-fluid d-flex justify-content-center align-items-center">
-        <div className="row">
-          <div className="col-lg-8 col-md-10 col-sm-12 text-center">
-            <div className='home-projects-quote'>
-              <h2 className='fsd'>I've spearheaded numerous full-stack developer projects that could reach and benefit thousands of users.</h2>
-            </div>
-          </div>
-        </div>
-      </section>
+<section id='home-projects' className="container-fluid d-flex justify-content-center align-items-center">
+  <div className="row">
+    <div className="col-lg-12 col-md-10 col-sm-12 col-xs-12 text-center">
+      <div className='home-projects-quote'>
+        <h2 className='fsd'>I've spearheaded numerous full-stack developer projects.</h2>
+      </div>
+    </div>
+  </div>
+</section>
+
+
 
       <div className="projects-link col-md-6 col-sm-12 d-flex justify-content-center">
         <div className='project-about-link'>

@@ -1,3 +1,8 @@
+:root{
+  margin: 0;
+  padding: 0;
+}
+
 a {
     text-decoration: none;
     color: white;
@@ -7,6 +12,7 @@ a {
   #header {
   
   }
+
   
   .list-inline {
     text-align: right;
@@ -26,6 +32,10 @@ a {
   
   .header-text {
     height: 85px;
+  }
+
+  #home-picture{
+    width: 100%;
   }
   
   /* Home */
@@ -81,7 +91,8 @@ a {
   .home-projects-quote {
     margin-top: 50px;
     color: black;
-    width: 800px;
+    padding-left: 400px;
+    padding-right: 400px;
   }
   
   .fsd {
@@ -109,6 +120,10 @@ a {
   }
     /* Footer */
 
+    .no-gutters {
+      --bs-gutter-x: 0; /* Remove horizontal gutter spacing */
+    }
+    
     .list-unstyled {
         list-style: none; /* Remove list points */
         background-color: black;
@@ -198,3 +213,63 @@ a {
       #ET-card{
         padding: 50px;
       }
+
+      /* qualifications */
+  
+
+      .btn-black{
+        color: white;
+        width: 100%;
+        text-align: left;
+        border-top: 1px solid white;
+        font-size: 30px;
+        font-weight: 200;
+      }
+      .btn-black:hover {
+        color: white; /* Ensure the text color remains unchanged on hover */
+        background-color: transparent; /* Set the background color to transparent on hover */
+        border-top: 1px solid white;
+      }
+      .q-page{
+        background-color: black;
+        width: 100%;
+      }
+      #q-header{
+        color: white;
+        background-color: black;
+        font-size: 60px;
+        padding-left: 50px;
+        padding-top: 100px;
+        padding-bottom: 100px;
+      }
+      .collapse-content{
+        background-color: black;
+        color: white;
+      }
+      .btn-black:focus,
+.btn-black:active {
+  outline: none; /* Remove the outline */
+  box-shadow: none; /* Remove the box shadow */
+}
+.resume-btn{
+  padding-top: 100px;
+  padding-bottom: 200px;
+}
+
+.certifications-list li {
+  font-size: 30px;
+  font-weight: 200;
+}
+
+    /* Contact */
+
+    #contact{
+      background-color: #D4EDF4;
+    }
+    .contact-btn{
+      margin-top: 50px;
+    }
+    .contact-header{
+      font-size: 60px;
+      padding-bottom: 50px;
+    }
