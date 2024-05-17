@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import { BsChevronDown, BsChevronUp } from 'react-icons/bs'; // Import icons
 
 const Qualifications = () => {
   const [collapse1, setCollapse1] = useState(false);
@@ -29,12 +30,13 @@ const Qualifications = () => {
         <div className="qualification">
           <div className="row">
             <div className="col">
-              <button className="btn btn-black btn-lg" onClick={toggleCollapse1}>
-              Certifications
+              <button className="btn btn-black btn-lg d-flex justify-content-between align-items-center" onClick={toggleCollapse1}>
+                <span>Certifications</span>
+                {collapse1 ? <BsChevronUp /> : <BsChevronDown />}
               </button>
               <div className={`collapse ${collapse1 ? 'show' : ''}`}>
                 <div className="card card-body mt-2 collapse-content">
-                  <ul className="certifications-list"> {/* Added class to ul element */}
+                  <ul className="certifications-list">
                     <li>HTML</li>
                     <li>CSS</li>
                     <li>JavaScript</li>
@@ -50,8 +52,9 @@ const Qualifications = () => {
           </div>
           <div className="row mt-2">
             <div className="col">
-              <button className="btn btn-black btn-lg" onClick={toggleCollapse2}>
-              Platform Experience
+              <button className="btn btn-black btn-lg d-flex justify-content-between align-items-center" onClick={toggleCollapse2}>
+                <span>Platform Experience</span>
+                {collapse2 ? <BsChevronUp /> : <BsChevronDown />}
               </button>
               <div className={`collapse ${collapse2 ? 'show' : ''}`}>
                 <div className="card card-body mt-2 collapse-content">
@@ -62,8 +65,9 @@ const Qualifications = () => {
           </div>
           <div className="row mt-2">
             <div className="col">
-              <button className="btn btn-black btn-lg" onClick={toggleCollapse3}>
-              Professional Skills
+              <button className="btn btn-black btn-lg d-flex justify-content-between align-items-center" onClick={toggleCollapse3}>
+                <span>Professional Skills</span>
+                {collapse3 ? <BsChevronUp /> : <BsChevronDown />}
               </button>
               <div className={`collapse ${collapse3 ? 'show' : ''}`}>
                 <div className="card card-body mt-2 collapse-content">
