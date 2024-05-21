@@ -10,7 +10,7 @@ a {
   
   /* Header */
   #header {
-  
+  height: 125px;
   }
 
   
@@ -182,7 +182,6 @@ a {
       }
       #wedding-img{
         height: 500px;
-        margin-left: 100px;
       }
       .page{
         background-color: #D4EDF4;
