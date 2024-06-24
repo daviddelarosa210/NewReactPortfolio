@@ -13,7 +13,7 @@ const About = () => {
           <div className="col-12 col-md-6 bg-white" id="bio">
             <h2 id="about-me-h2">But that’s not all…</h2>
             <p id="about-me-p">
-              Welcome! I'm David De La Rosa, a Full-Stack Developer certified by UTSA in 2024. With a passion for coding since 2017, I've specialized in creating seamless web experiences. My journey began by supporting my family's business, where I've optimized our online presence. I thrive on challenges and love exploring new technologies. Let's connect and bring your digital ideas to life!
+              I'm David De La Rosa, a Full-Stack Developer certified by UTSA in 2024. With a passion for coding since 2017, I've specialized in creating seamless web experiences. My journey began by supporting my family's business, where I've optimized our online presence. I thrive on challenges and love exploring new technologies. Let's connect and bring your digital ideas to life!
             </p>
           </div>
           <div className="col-12 col-md-6 d-flex justify-content-center align-items-center">

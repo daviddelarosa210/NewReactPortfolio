@@ -1,22 +1,27 @@
 import React, { useState } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { BsChevronDown, BsChevronUp } from 'react-icons/bs'; // Import icons
+import { BsChevronDown, BsChevronUp } from 'react-icons/bs';
 
 const Qualifications = () => {
-  const [collapse1, setCollapse1] = useState(false);
-  const [collapse2, setCollapse2] = useState(false);
-  const [collapse3, setCollapse3] = useState(false);
+  const [collapseCertifications, setCollapseCertifications] = useState(false);
+  const [collapseLanguages, setCollapseLanguages] = useState(false);
+  const [collapsePlatformExperience, setCollapsePlatformExperience] = useState(false);
+  const [collapseProfessionalSkills, setCollapseProfessionalSkills] = useState(false);
 
-  const toggleCollapse1 = () => {
-    setCollapse1(!collapse1);
+  const toggleCollapseCertifications = () => {
+    setCollapseCertifications(!collapseCertifications);
   };
 
-  const toggleCollapse2 = () => {
-    setCollapse2(!collapse2);
+  const toggleCollapseLanguages = () => {
+    setCollapseLanguages(!collapseLanguages);
   };
 
-  const toggleCollapse3 = () => {
-    setCollapse3(!collapse3);
+  const toggleCollapsePlatformExperience = () => {
+    setCollapsePlatformExperience(!collapsePlatformExperience);
+  };
+
+  const toggleCollapseProfessionalSkills = () => {
+    setCollapseProfessionalSkills(!collapseProfessionalSkills);
   };
 
   return (
@@ -28,13 +33,30 @@ const Qualifications = () => {
       </div>
       <div className="container">
         <div className="qualification">
+          <div className="row mt-2">
+            <div className="col">
+              <button className="btn btn-black btn-lg d-flex justify-content-between align-items-center" onClick={toggleCollapseCertifications}>
+                <span>Certifications</span>
+                {collapseCertifications ? <BsChevronUp /> : <BsChevronDown />}
+              </button>
+              <div className={`collapse ${collapseCertifications ? 'show' : ''}`}>
+                <div className="card card-body mt-2 collapse-content">
+                  <ul className="certifications-list col-md-8">
+                    <h4>The University of Texas at San Antonio, School of Data Science</h4>
+
+                    <h4>Coding Bootcamp Certification</h4>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
           <div className="row">
             <div className="col">
-              <button className="btn btn-black btn-lg d-flex justify-content-between align-items-center" onClick={toggleCollapse1}>
-                <span>Certifications</span>
-                {collapse1 ? <BsChevronUp /> : <BsChevronDown />}
+              <button className="btn btn-black btn-lg d-flex justify-content-between align-items-center" onClick={toggleCollapseLanguages}>
+                <span>Languages</span>
+                {collapseLanguages ? <BsChevronUp /> : <BsChevronDown />}
               </button>
-              <div className={`collapse ${collapse1 ? 'show' : ''}`}>
+              <div className={`collapse ${collapseLanguages ? 'show' : ''}`}>
                 <div className="card card-body mt-2 collapse-content">
                   <ul className="certifications-list">
                     <li>HTML</li>
@@ -52,26 +74,53 @@ const Qualifications = () => {
           </div>
           <div className="row mt-2">
             <div className="col">
-              <button className="btn btn-black btn-lg d-flex justify-content-between align-items-center" onClick={toggleCollapse2}>
+              <button className="btn btn-black btn-lg d-flex justify-content-between align-items-center" onClick={toggleCollapsePlatformExperience}>
                 <span>Platform Experience</span>
-                {collapse2 ? <BsChevronUp /> : <BsChevronDown />}
+                {collapsePlatformExperience ? <BsChevronUp /> : <BsChevronDown />}
               </button>
-              <div className={`collapse ${collapse2 ? 'show' : ''}`}>
+              <div className={`collapse ${collapsePlatformExperience ? 'show' : ''}`}>
                 <div className="card card-body mt-2 collapse-content">
-                  Content for second collapse...
+                  <ul className="certifications-list">
+                    <li>Visual Studio Code</li>
+                    <li>Bootstrap</li>
+                    <li>Atom</li>
+                    <li>Github</li>
+                    <li>Gitlab</li>
+                    <li>Heroku</li>
+                    <li>Insomnia</li>
+                    <li>MongoDB Compass</li>
+                    <li>Handlebars</li>
+                    <li>Postman</li>
+                    <li>Slack</li>
+                  </ul>
                 </div>
               </div>
             </div>
           </div>
           <div className="row mt-2">
             <div className="col">
-              <button className="btn btn-black btn-lg d-flex justify-content-between align-items-center" onClick={toggleCollapse3}>
+              <button className="btn btn-black btn-lg d-flex justify-content-between align-items-center" onClick={toggleCollapseProfessionalSkills}>
                 <span>Professional Skills</span>
-                {collapse3 ? <BsChevronUp /> : <BsChevronDown />}
+                {collapseProfessionalSkills ? <BsChevronUp /> : <BsChevronDown />}
               </button>
-              <div className={`collapse ${collapse3 ? 'show' : ''}`}>
+              <div className={`collapse ${collapseProfessionalSkills ? 'show' : ''}`}>
                 <div className="card card-body mt-2 collapse-content">
-                  Content for third collapse...
+                  <ul className="certifications-list">
+                    <li>Front-End Development</li>
+                    <li>Back-End Development</li>
+                    <li>Version Control and Deployment</li>
+                    <li>Integrated Development Environments</li>
+                    <li>Testing</li>
+                    <li>Debugging</li>
+                    <li>Gitflow</li>
+                    <li>Project Management</li>
+                    <li>Team Collaboration</li>
+                    <li>Problem Solving</li>
+                    <li>Time Management</li>
+                    <li>Adaptability</li>
+                    <li>Organization</li>
+                    <li>Critical Thinking</li>
+                  </ul>
                 </div>
               </div>
             </div>

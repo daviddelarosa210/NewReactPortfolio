@@ -215,6 +215,10 @@ a {
 
       /* qualifications */
   
+      .Cer-text{
+        font-size: 30px;
+        font-weight: lighter;
+      }
 
       .btn-black{
         color: white;
