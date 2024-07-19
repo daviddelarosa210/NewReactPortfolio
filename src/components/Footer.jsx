@@ -31,6 +31,18 @@ const Footer = () => {
           </ul>
         </div>
       </div>
+       {/* Add your footer content here */}
+       <p className='footer-copy'>&copy; 2024 David's Resume</p>
+      {/* Text links to GitHub and LinkedIn */}
+      <div className='footer-copy'>
+        <a href="https://github.com/daviddelarosa210" target="_blank" rel="noopener noreferrer">
+          GitHub
+        </a>
+        {' | '}
+        <a href="https://www.linkedin.com/in/david-de-la-rosa-b0150b177/" target="_blank" rel="noopener noreferrer">
+          LinkedIn
+        </a>
+      </div>
     </footer>
   );
 };

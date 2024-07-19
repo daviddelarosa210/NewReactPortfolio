@@ -122,6 +122,7 @@ a {
 
     .no-gutters {
       --bs-gutter-x: 0; /* Remove horizontal gutter spacing */
+      padding-bottom: 100px;
     }
     
     .list-unstyled {
@@ -151,6 +152,11 @@ a {
       }
       .list-unstyled li a {
         text-decoration: underline;
+      }
+      .footer-copy{
+        font-size: 20px;
+        font-weight: 100;
+        text-align: center;
       }
       /* About */
       .about-me-heading{

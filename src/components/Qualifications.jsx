@@ -127,7 +127,7 @@ const Qualifications = () => {
           </div>
           <div className="row mt-4 resume-btn">
             <div className="col">
-              <a href="/path/to/your/resume.pdf" download className="btn btn-lg custom-button about-me-text">Download Resume</a>
+              <a href="/Davids-resume.pdf" download className="btn btn-lg custom-button about-me-text">Download Resume</a>
             </div>
           </div>
         </div>
