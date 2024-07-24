@@ -34,9 +34,7 @@ a {
     height: 85px;
   }
 
-  #home-picture{
-    width: 100%;
-  }
+
   
   /* Home */
   #home {
@@ -73,6 +71,7 @@ a {
   
   .about-me-text {
     color: black;
+    margin-left: 50px;
   }
   
   .custom-button {
@@ -91,8 +90,6 @@ a {
   .home-projects-quote {
     margin-top: 50px;
     color: black;
-    padding-left: 400px;
-    padding-right: 400px;
   }
   
   .fsd {

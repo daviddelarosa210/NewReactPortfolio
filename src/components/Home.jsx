@@ -23,12 +23,11 @@ const Home = () => {
       </section>
       
       <section id="home-picture" className="d-flex justify-content-center align-items-center">
-        <div className="row">
-          <div className="col-md-12 d-flex justify-content-center">
-            <img src="/pfp.png" alt="Photo of David De La Rosa" className="img-fluid"/>
-          </div>
-        </div>
-      </section>
+  <div className="text-center">
+    <img src="/pfp.png" alt="Photo of David De La Rosa" className="img-fluid" />
+  </div>
+</section>
+
 
       <section id="home-quote" className="container-fluid">
         <div className="row">
@@ -42,20 +41,21 @@ const Home = () => {
       </section>
 
       <div className="row justify-content-start no-gutters">
-        <div className="col-md-6 col-sm-12 d-flex justify-content-start" style={{ marginLeft: '60px' }}>
-          <div className='home-about-link'>
-            <button onClick={() => scrollToTop('/about')} className="btn btn-lg custom-button about-me-text">
-              About Me
-            </button>
-          </div>
-        </div>
-      </div>
+  <div className="col-md-6 d-flex justify-content-start ml-md-4">
+    <div className='home-about-link'>
+      <button onClick={() => scrollToTop('/about')} className="btn btn-lg custom-button about-me-text">
+        About Me
+      </button>
+    </div>
+  </div>
+</div>
+
 
       <section id='home-projects' className="container-fluid d-flex justify-content-center align-items-center">
         <div className="row">
           <div className="col-lg-12 col-md-10 col-sm-12 col-xs-12 text-center">
             <div className='home-projects-quote'>
-              <h2 className='fsd'>I've spearheaded numerous full-stack developer projects.</h2>
+              <h2 className='fsd container-fluid d-flex justify-content-center align-items-center'>I've spearheaded numerous full-stack developer projects.</h2>
             </div>
           </div>
         </div>
